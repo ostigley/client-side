@@ -6,6 +6,6 @@ xhr.get('https://api.wheretheiss.at/v1/satellites/25544', function(err, data) {
 
   data = JSON.parse(data.body)
   console.log(data.velocity)
-  document.body.innerHTML = example({ name: data.velocity.velocity });
+  document.body.innerHTML = example({ name: data.velocity });
 })
 
